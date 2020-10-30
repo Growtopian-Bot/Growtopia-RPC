@@ -3,7 +3,7 @@ const fs = require('fs');
 
 /** @returns {Promise} */
 module.exports = async (version) => {
-  return fetch("https://api.github.com/repos/Phefox/Growtopia-RPC/tags")
+  return fetch("https://api.github.com/repos/AykutSarac/Growtopia-RPC/tags")
   .then(res => res.json())
   .then(data => {
     if (data[0].name !== version) {
