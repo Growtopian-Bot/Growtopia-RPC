@@ -1,4 +1,5 @@
 const path = require('path');
+const { version } = require('punycode');
 
 class App {
 
@@ -13,10 +14,11 @@ class App {
 
     async versionCheck() {
         return require('./lib/versionCheck')(this.version).then(newVer => {
+
             if (newVer) {
                 return ">> Newer version of Growtopia-RPC is available: https://github.com/AykutSarac/Growtopia-RPC";
             } else {
-                return "Up to date";
+                return ">> Version: " + this.version;
             }
         });
     }
