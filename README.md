@@ -9,7 +9,7 @@ Growtopia Presence for Discord.
   
 
 # Instructions
-- For General Usage
+## For General Usage
 - Download the zip - https://github.com/AykutSarac/Growtopia-RPC/blob/main/RPC.zip
 - Open the file inside of zip.
 - Run Growtopia-RPC.exe
