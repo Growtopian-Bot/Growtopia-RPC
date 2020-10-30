@@ -1,0 +1,25 @@
+{
+  "name": "gtrpc",
+  "version": "2.0.0",
+  "description": "Discord Rich Presence for Growtopia Game.",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [
+    "growtopia",
+    "discord",
+    "growtopia-rpc"
+  ],
+  "author": "AykutSarac",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "discord-rpc": "^3.1.4",
+    "node-fetch": "^2.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:AykutSarac/Growtopia-RPC.git"
+  },
+  "homepage": "https://github.com/AykutSarac/Growtopia-RPC#readme"
+}
