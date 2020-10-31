@@ -3,6 +3,7 @@
   "version": "2.0.0",
   "description": "Discord Rich Presence for Growtopia Game.",
   "main": "main.js",
+  "bin": "./bin/bin.js",
   "scripts": {
     "start": "node main.js"
   },

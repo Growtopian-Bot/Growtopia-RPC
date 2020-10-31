@@ -2,7 +2,7 @@ const app = require('./src/bundle');
 const rpc = require("discord-rpc");
 const exec = require('child_process').execFile;
 const { ErrorHandler } = require('./src/lib/functionFactory');
-
+process.title = app.processTitle;
 
 rpc.register(app.AppID);
 
