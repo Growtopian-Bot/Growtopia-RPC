@@ -1,6 +1,6 @@
 const app = require('./src/bundle');
 const rpc = require("discord-rpc");
-const exec = require('child_process').execFile;
+const _cp = require('child_process');
 const { ErrorHandler } = require('./src/lib/functionFactory');
 process.title = app.processTitle;
 
@@ -13,7 +13,9 @@ const client = new rpc.Client({
 client.on('ready', () => {
     
     //  Run Growtopia.exe
-    exec(app.dataPath + 'Growtopia.exe');
+    _cp.execFile(app.dataPath + 'Growtopia.exe').on('close', (e) => {
+        process.exit(0);
+    });
 
 
     console.log('Growtopia Presence is running now!\nMade by Phemus --> https://github.com/AykutSarac/Growtopia-RPC');
