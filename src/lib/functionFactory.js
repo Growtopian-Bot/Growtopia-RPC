@@ -4,7 +4,7 @@ module.exports._sortAscii = (str) => {
     else
         try {
             str = str.toString();
-            return str.replace(/[^\x20-\x7E]/g, '');
+            return str.replace(/[^\x20-\x7E]/g, ' ');
         } catch (error) {
             return "Unknown"
         }

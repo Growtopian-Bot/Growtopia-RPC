@@ -23,5 +23,5 @@ class App {
     }
 }
 
-const newApp = new App("v2.0");
+const newApp = new App("v2.1");
 module.exports = newApp;
